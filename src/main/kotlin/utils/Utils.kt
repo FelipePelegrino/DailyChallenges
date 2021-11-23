@@ -1,3 +1,5 @@
+package utils
+
 fun getInt(): Int {
     var input: Int = getIntProcess()
 
@@ -17,8 +19,6 @@ private fun getIntProcess(): Int {
     } catch (exception: NumberFormatException) {
         int = Constants.GET_INT_FAIL
         println("Error: Falha na conversão do input $input")
-//        println("Message: ${exception.localizedMessage}")
-//        println("StackTrace: ${exception.stackTraceToString()}")
     }
     println()
 
